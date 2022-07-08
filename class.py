@@ -45,3 +45,27 @@ print(did_pass)
 student2 = Student('jannet',38)
 did_pass = Student.check()
 print(did_pass)
+
+
+
+#Third code for class to add numbers
+
+class something:
+    def __init__(self,first,second):
+        self.first = first
+        self.second = second
+
+    def add(self,number):
+        real = self.first + number.first
+        imag = self.second + number.second
+        result = something(real,imag)
+        return result
+
+n1 = something(4,7)
+
+n2 = something(-5,9)
+
+result = n1.add(n2)
+print('real :',result.first)
+print('imag :',result.second)
+
