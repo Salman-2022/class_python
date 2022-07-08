@@ -69,3 +69,19 @@ result = n1.add(n2)
 print('real :',result.first)
 print('imag :',result.second)
 
+#finding peremeter using class
+
+class triangle:
+    def __init__(self,a,b,c):
+        self.a = a
+        self.b = b
+        self.c = c
+
+    def peremeter(self):
+        total = self.a+self.b+self.c
+        return total
+
+sides = triangle(3,4,5)
+final_value = sides.peremeter()
+
+print('peremeter :',final_value)
